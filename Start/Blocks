@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+        border: 1px solid red;
+        display:block;
+        width:100px;
+        height:100px;
+        background:white;
+    }
+#d1{
+	position: fixed;
+	top: 8px;
+	left: 10px;
+}
+#d2{
+	position: fixed;
+	top: 8px;
+	left: 130px;
+}
+#d3{
+	position: fixed;
+	top: 60px;
+	left: 60px;
+    z-index: 1;
+}
+#d4{
+	position: fixed;
+	top: 120px;
+	left: 10px;
+    
+}
+#d5{
+	position: fixed;
+	top: 120px;
+	left: 130px;
+
+}
+
+</style>
+</head>
+<body>
+<div id='d1'>1</div>
+<div id='d2'>2</div>
+<div id='d3'>3</div>
+<div id='d4'>4</div>
+<div id='d5'>5</div>
+
+</body>
+</html>
+
+
