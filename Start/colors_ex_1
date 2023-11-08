@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.dot {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 20px #FF0000, -10px -10px 20px #ff8800;
+  opacity: 0.3;
+
+</style>
+<p >An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Here is a simple example:An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Here is a simple example:</p>
+<div class = "dot"> </div>
+
+</body>
+</html>
+
+
