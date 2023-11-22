@@ -2,26 +2,40 @@
 <html>
 <style>
 td {
-border:1px solid #000;
-width:60px;
-height:50px;
-text-align:center;
+	border:1px solid #000;
+	width:60px;
+	height:30px;
+	text-align:center;
+}
+#r2{
+    background: blue;
+
 }
 table { border-collapse: collapse; }
-#cell1 { background: red; }
 </style>
 <body>
 <table>
 <tbody>
-<tr>
-<td>1.1</td>
-<td colspan="2">1.2</td>
-</tr>
-<tr>
-<td id="cell1">2.1</td>
-<td id="cell2">2.2</td>
-<td>2.3</td>
-</tr>
+	<tr>
+		<td rowspan="2">1.1</td>
+		<td colspan="2">1.2</td>
+	</tr>
+    	<td ></td>
+		<td id="cell2"></td>
+    <tr>
+	</tr>
+    <tr id="r2">
+		<td >2.1</td>
+		<td id="cell2">2.2</td>
+		<td>2.3</td>
+	</tr>
+    <tr>
+    	<td id="cell3" colspan="2" rowspan="2">3.1</td>
+		<td>3.3</td>
+    </tr>
+    <tr id="r3">
+		<td id="cell3" colspan="2">4.1</td>
+	</tr>
 </tbody>
 </table>
 </body>
