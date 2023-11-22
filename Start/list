@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+	li { display:block; }
+</style>
+<ul>
+	<li><details>
+	<summary>Giant planets</summary>
+	<ul>
+	<li>Gas Giants
+	<ul>
+		<li>Jupiter</li>
+		<li>Saturn</li>
+	</ul></li>
+	<li>Ice Giants</li>
+	</ul></details></li>
+</ul>
+
+</body>
+</html>
