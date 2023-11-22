@@ -25,16 +25,14 @@ table { border-collapse: collapse; }
     <tr>
 	</tr>
     <tr id="r2">
-		<td >2.1</td>
-		<td id="cell2">2.2</td>
-		<td>2.3</td>
+		<td colspan="3">2.1</td>
 	</tr>
     <tr>
     	<td id="cell3" colspan="2" rowspan="2">3.1</td>
 		<td>3.3</td>
     </tr>
     <tr id="r3">
-		<td id="cell3" colspan="2">4.1</td>
+		<td id="cell3" colspan="2">4.3</td>
 	</tr>
 </tbody>
 </table>
