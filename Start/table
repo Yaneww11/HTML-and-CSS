@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+td {
+border:1px solid #000;
+width:60px;
+height:50px;
+text-align:center;
+}
+table { border-collapse: collapse; }
+#cell1 { background: red; }
+</style>
+<body>
+<table>
+<tbody>
+<tr>
+<td>1.1</td>
+<td colspan="2">1.2</td>
+</tr>
+<tr>
+<td id="cell1">2.1</td>
+<td id="cell2">2.2</td>
+<td>2.3</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
