@@ -1,0 +1,81 @@
+#nav-toggle{
+    display: none;
+}
+
+header nav{
+    display: none;
+}
+
+header label{
+    margin-left: auto;
+    padding: 1em;
+}
+
+header label span{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+header label span svg{
+    width: 0.7em;
+}
+
+@media (max-width: 770px){
+    #nav-toggle:checked + .page1 nav{
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 4em;
+    }
+
+    #nav-toggle:checked + .page1 nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #nav-toggle:checked + .page1 nav li{
+        width: 100%;
+        background: #b2b2b2;
+        padding: 0.5em;
+        display: block;
+        text-align: center;
+        border-radius: 0.4em;
+    }
+
+    #nav-toggle:checked + .page1 label[for="nav-toggle"]{
+        position: fixed;
+        z-index: 2;
+        top: 2em;right: 2em;
+        background: #b2b2b2;
+        padding: 1em 1.5em;
+        border-radius: 0.4em;
+    }
+
+    #nav-toggle:checked + .page1 label[for="nav-toggle"] span{
+        display: none;
+    }
+
+    #nav-toggle:checked + .page1 label[for="nav-toggle"]:before{
+        display: block;
+        content: "X";
+    }
+
+}
+
+@media (min-width: 770px) {
+    header nav {
+        display: block;
+        margin-left: auto;
+    }
+
+    header label {
+        display: none;
+    }
+}
+

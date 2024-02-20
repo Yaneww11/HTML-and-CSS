@@ -1,0 +1,40 @@
+@media screen and (min-width: 600px) {
+    body{
+        font-size: 14px ;
+    }
+
+    .form input{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    body{
+        font-size: 16px;
+    }
+
+    body div[class^="page"]{
+        padding: 2em 4em ;
+    }
+
+    section:first-child{
+        margin: 3em;
+    }
+
+    .card{
+        width: 27%;
+    }
+
+    .form input{
+        width: 30%;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    footer > div{
+        width: 20%;
+    }
+
+}
