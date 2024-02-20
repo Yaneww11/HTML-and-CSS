@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" required placeholder="eg Yane" pattern="\w{4,16}">
+            <span class="helper info">Starts with letter and write between 4-16 characters </span>
+        </div>
+
+        <div class="field">
+            <label for="password">Username</label>
+            <input type="password" id="password" required placeholder="Something complicated" minlength="8">
+            <span class="helper info">Min. 8 characters</span>
+        </div>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
