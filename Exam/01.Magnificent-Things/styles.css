@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 15px/1.5 Inter, sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+article{
+    background: #85DCFF;
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2em;
+    gap: 3em;
+}
+
+h1{
+    font-size: 2.8em;
+    padding-block: 1rem;
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 48%;
+}
+
+.colum p:nth-child(3){
+    padding-bottom: 2rem;
+}
+
+.container-buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.colum a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 0.3em;
+}
+
+.colum a:first-child{
+    background-color: #42AA59;
+}
+
+.colum a:nth-child(2){
+    border-color: white;
+    background-color: white;
+}
+
+.colum img{
+    box-shadow: 0.4em 0.3em 0.6em rgba(0, 0, 0, 0.8);
+}
+
+.colum:nth-child(2){
+    max-width: 370px;
+    margin-left: auto;
+    padding-block: 3em;
+}
+
+
+
