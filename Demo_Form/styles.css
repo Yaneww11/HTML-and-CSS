@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, button{
+    font: inherit;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: #eee;
+    min-height: 100vh;
+}
+
+form{
+    background: #FFF;
+    border-radius: 0.3em;
+    display: flex;
+    padding: 2em;
+    gap: 1em;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 0.2em;
+}
+
+.field .helper{
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in;
+}
+
+input:is([type="text"], [type="password"]){
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 4px solid #ccc;
+    border-radius: 0.2em;
+    outline: none;
+
+    &:user-invalid{
+        border-color: red;
+    }
+
+    &:valid{
+        border-color: green;
+    }
+
+    &:focus{
+        border-color: black;
+
+        /* & - input:is([type="text"], [type="password"])
+        element1 ~ .helper - selector for elements with class="helper" after element1 and have same parent with him (field)*/
+        & ~ .helper{
+            opacity: 1;
+        }
+    }
+}
+
+.field:has(input:user-invalid){
+    color: red;
+}
+
+.field:has(input:valid){
+    color: green;
+}
+
+.field:has(input:focus){
+    color: black;
+}
+
+input[type="submit"]{
+    display: block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.2em;
+    background: #eee;
+    cursor: pointer;
+    outline: none;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
