@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li{
+    display: block;
+    position: relative;
+    width: 4em;
+    height: 4em;
+    margin-bottom: 0.5em;
+
+
+}
+nav > ul > li{
+    display: inline-block;
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    background-color: #b7b7b7;
+    border-radius: 50%;
+    padding: 1em;
+    position: relative;
+}
+
+
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+}
+ul li:nth-child(1) a svg:hover{
+    fill: #2424c7;
+}
+ul li:nth-child(2) a svg:hover{
+    fill: #04d9f5;
+}
+ul li:nth-child(3) a svg:hover{
+    fill: #f55e00;
+}
+ul li:nth-child(4) a svg:hover{
+    fill: #0059ff;
+}
+nav li:nth-child(5):hover > a svg,
+ul li:nth-child(5) a svg:hover{
+    fill: #c907fd;
+
+}
+
+nav li:nth-child(5) li a svg:hover{
+    fill: #ffffff;
+}
+
+li ul a{
+    padding: 0;
+}
+img{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul ul{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+}
+
+nav ul ul li{
+    margin-top: 0.3em;
+}
+
+nav ul ul ul{
+    top: 0;
+    left: 100%;
+    padding-left: 0.5em;
+}
