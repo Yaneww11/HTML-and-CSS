@@ -1,0 +1,85 @@
+html{
+    font-family: Georgia, serif;
+}
+body{
+    padding: 1em 8em;
+    background-color: rgb(238, 238, 238)
+}
+
+header{
+    border-bottom: 2px solid black;
+}
+article{
+    display: inline-block;
+    margin-bottom: 2.5em;
+    width: 65%;
+    float: left;
+}
+aside{
+    display: inline-block;
+    margin-left: 9em;
+}
+
+img{
+    display: block;
+    width: 9em;
+    height: auto;
+    background-color: white;
+    padding: 0.6em;
+    margin-left: 1em;
+    margin-bottom: 0.4em;
+    border: 3px solid black;
+    float: right;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+header h1{
+    display: inline-block;
+    margin-right: 61%;
+}
+
+header nav{
+    display: inline-block;
+
+}
+header nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+header nav ul li{
+    margin-right: 0.5em;
+    padding-right: 1em;
+    display: inline-block;
+    list-style-type: none;
+    color: green;
+}
+
+.float-left{
+    float: left;
+    width: 48%;
+    padding-right: 1em;
+    margin: 0 1em 0 0;
+    border-right: 2px solid #a8a4a4;
+}
+.author,
+.float-right{
+    color: #a8a4a4;
+    font-style: italic;
+    margin-right: 1.3em;
+}
+.author{
+    margin: 2em 1.3em 3.3em 0;
+    text-align: right;
+}
+
+.img2{
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: green;
+}
